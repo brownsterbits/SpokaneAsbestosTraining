@@ -196,12 +196,13 @@ ul {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0;
 }
 
 .logo img {
     height: 75px;
     width: auto;
+    margin-right: -10px;
 }
 
 .logo-text {
@@ -569,6 +570,7 @@ ul {
         grid-template-columns: 1fr;
     }
 }
+
 /* --- New Page Styles --- */
 
 /* Page Headers (Subpages) */
@@ -586,7 +588,7 @@ ul {
 
 .page-header p {
     font-size: 1.2rem;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     max-width: 700px;
     margin: 0 auto;
 }
@@ -635,11 +637,13 @@ ul {
 }
 
 /* Lists */
-.check-list, .styled-list {
+.check-list,
+.styled-list {
     margin: 1rem 0 2rem;
 }
 
-.check-list li, .styled-list li {
+.check-list li,
+.styled-list li {
     padding-left: 2rem;
     position: relative;
     margin-bottom: 0.8rem;
@@ -700,6 +704,13 @@ ul {
 
 /* Responsive adjustments for new pages */
 @media (max-width: 768px) {
-    .image-placeholder { height: 250px; }
-    .contact-grid, .policy-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+    .image-placeholder {
+        height: 250px;
+    }
+
+    .contact-grid,
+    .policy-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
 }
